@@ -10,6 +10,7 @@ export const ContactCard = ({ contact: { id, name, number } }) => {
       <Card key={id}>
         <span>{name}</span>
         <span>{number}</span>
+        {/* <button onClick={() => dispatch(deleteContact(id))}>Delete</button> */}
         <button onClick={handleDelete}>Delete</button>
       </Card>
     </CardBlock>
